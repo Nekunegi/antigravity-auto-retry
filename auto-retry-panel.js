@@ -1,6 +1,6 @@
 (() => {
   // Retryボタンの自動クリックスクリプト（パネル用）
-  const RETRY_LABELS = ["retry", "try again", "重試", "重新尝试"];
+  const RETRY_LABELS = ["retry"];
   const CLICK_COOLDOWN_MS = 1500;
   const lastClick = new WeakMap();
 
@@ -19,7 +19,7 @@
 
   function matchesRetry(el) {
     const text = getText(el);
-    return RETRY_LABELS.some(label => text.includes(label));
+    return RETRY_LABELS.some(label => text === label);
   }
 
   function clickIfRetry(el) {

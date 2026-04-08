@@ -19,7 +19,7 @@
 
   function matchesRetry(el) {
     const text = getText(el);
-    return RETRY_LABELS.some(label => text.includes(label));
+    return RETRY_LABELS.some(label => text === label);
   }
 
   function clickIfRetry(el) {
