@@ -58,3 +58,7 @@ Copy-Item "$base\extensions\antigravity\cascade-panel.html.bak" "$base\extension
 ## Credits
 
 Based on [mewmewwow/auto_retry_antigravity](https://github.com/mewmewwow/auto_retry_antigravity) (macOS version)
+
+## バージョン
+
+**v1.1.5** - 2026-05-18
